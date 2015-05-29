@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>
+simple calculator
+</title>
+</head>
+<body bgcolor="black">
+
+<form name="prakash">
+<center>
+<input name="answer" style="background-color:grey">
+</center>
+</br>
+<center>
+<input type="reset" name="c" value="c" style="background-color:red" >
+<input type="button" name="(" value="(" onClick="b()">
+<input type="button" name=")" value=")" onClick="a()">
+<input type="button" name="%" value="%" onClick="d()">
+</br>
+</center>
+<center>
+<input type="button" name="7" value="7" onClick="e()">
+<input type="button" name="8" value="8" onClick="f()">
+<input type="button" name="9" value="9" onClick="g()">
+<input type="button" name="/" value="/" onClick="h()">
+</br>
+</center>
+<center>
+<input type="button" name="4" value="4" onClick="i()">
+<input type="button" name="5" value="5" onClick="j()">
+<input type="button" name="6" value="6" onClick="k()">
+<input type="button" name="x" value="*" onClick="l()">
+</br>
+</center>
+<center>
+<input type="button" name="1" value="1" onClick="m()">
+<input type="button" name="2" value="2" onClick="n()">
+<input type="button" name="3" value="3" onClick="o()">
+<input type="button" name="-" value="-" onClick="p()">
+</br>
+</center>
+<center>
+<input type="button" name="0" value="0" onClick="q()">
+<input type="button" name="." value="." onClick="r()">
+<input type="button" name="=" value="=" onClick="s()" style="background-color:orange">
+<input type="button" name="+" value="+" onClick="t()">
+</br>
+</center>
+</form>
+
+<script >
+
+function b()
+{document.prakash.answer.value+="(";}
+function a()
+{document.prakash.answer.value+=")";}
+function d()
+{document.prakash.answer.value+="%";}
+function e()
+{document.prakash.answer.value+="7";}
+function f()
+{document.prakash.answer.value+="8";}
+function g()
+{document.prakash.answer.value+="9";}
+function h()
+{document.prakash.answer.value+="/";}
+function i()
+{document.prakash.answer.value+="4";}
+function j()
+{document.prakash.answer.value+="5";}
+function k()
+{document.prakash.answer.value+="6";}
+function l()
+{document.prakash.answer.value+="*";}
+function m()
+{document.prakash.answer.value+="1";}
+function n()
+{document.prakash.answer.value+="2";}
+function o()
+{document.prakash.answer.value+="3";}
+function p()
+{document.prakash.answer.value+="-";}
+function q()
+{document.prakash.answer.value+="0";}
+function r()
+{document.prakash.answer.value+=".";}
+function t()
+{document.prakash.answer.value+="+";}
+
+function s()
+{ var x=eval(document.prakash.answer.value)
+  document.prakash.answer.value=x;
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<script>
+window.onload=function()
+{ var x=document.getElementById('graph');
+   var y=x.getContext('2d');
+var m= new Array(5);
+  for( var i=0;i<5;i++) 
+  { m[i]=prompt("enter the value","");}
+
+   var width=50;
+   var left=50;
+   var top=100;
+ y.fillStyle='red';
+ y.strokeStyle='green';
+for( i=0;i<5;i++)
+{  var h=m[i];
+   y.fillRect(left,x.height-h,width,h);
+   y.strokeRect(left,x.height-h,width,h);
+  left+=width+10;
+}
+m.sort();
+for( i=0;i<5;i++)
+{  var h=m[i];
+   y.fillRect(left,x.height-h,width,h);
+   y.strokeRect(left,x.height-h,width,h);
+  left+=width+10;
+}
+
+};
+</script>
+</head>
+<body>
+<canvas id="graph" width="1000" height="200">
+</body>
+</html>
+   

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>
+moving a rectangle
+</title>
+<script>
+window.onload=function(){
+divObj=document.getElementById('movingDiv'); 
+window.onkeydown=function(e)
+{ e.preventDefault();
+  if(e)
+{ e=window.event;}
+ 
+var keycode;
+if(e.which)
+{ keycode=e.which;}
+else
+{ keycode=e.keyCode;
+}
+var speed=5;
+alert(e.keyCode);
+if(keycode==39)
+{ divObj.style.left=(parseInt(divObj.style.left)+speed)+'px';
+}
+if(keycode==37)
+{ divObj.style.left=(parseInt(divObj.style.left)-speed)+'px';
+}
+
+
+}}
+</script>
+<style>
+#movingDiv{
+width:100px;
+height:100px;
+position:absolute;
+background-color:black;
+left:0;
+top:0;
+}
+
+</style>
+</head>
+<body>
+<div id="movingDiv" style="top:0px;left:0px "></div>
+</body>
+</html>
